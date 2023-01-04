@@ -2,9 +2,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    padding: 10px 0;
     width: 80%;
     margin: 0 auto;  
+}
+
+.logo-img {
+    width: 200px;
 }
 
 .nav-menu {
@@ -30,33 +34,42 @@ header {
 @media screen and (max-width: 1024px) {
     header {
         width: 100%;
-        padding: 0 30px;
+        padding: 10px 30px;
     }
+
+    .logo-img {
+        width: 150px;
+    }
+
     .nav-menu {
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
-        height: 90vh;
+        height: 100vh;
         background: #edefee;
         position: absolute;
-        top: 10vh;
+        top: 0;
         right: -100%;
         z-index: 10;
         transition: 0.5s;
-        padding: 20px 30px 20px 120px;
+        padding: 80px 30px 20px 120px;
     }
 
     .nav-menu.active {
         right: 0;
-        top: 10vh;
+        top: 0;
     }
 
     .nav-menu li {
         padding: 10px 0;
     }
 
+    .nav-menu li a {
+        color: #333333;
+    }
 
     .hamburger, .close-hamburger {
+        line-height: 0.8;
         display: initial;
         z-index: 11;
     }
