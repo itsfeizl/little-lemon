@@ -1,0 +1,150 @@
+.hero-section-background {
+    background-color: #495e57;
+    width: 100%;
+}
+
+.hero-section-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.section-left {
+    width: 80%;
+}
+
+.section-left h1 {
+    color: #f4ce14;
+}
+
+.section-left h1, h2 {
+    line-height: 0.8;
+}
+
+.section-left p {
+    width:75%;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 16pt;
+    font-weight: 600;
+    background-color: #f4ce14;
+    color: #333333;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #333333;
+    color: #f4ce14;
+    transition: 0.3s;
+}
+
+.section-right {
+    width: 400px;
+    position: relative;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border-radius: 10px;
+    position: absolute;
+    overflow:hidden;
+}
+
+.image-box img {
+    width:100%;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .image-box {
+        right: 0;
+    }
+
+    .hero-section-container {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 924px) {
+    .image-box {
+        width: 340px;
+        height: 380px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 830px) {
+    .image-box {
+        width: 300px;
+        height: 370px;
+    }
+
+    h1 {
+        font-size: 54pt;
+      }
+      
+      h2 {
+        font-size: 34pt;
+      }
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    .section-left {
+        width: 100%;
+    }   
+
+    .image-box {
+        top: 35%;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 699px) {
+    .hero-section-container {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 300px;
+        position: initial
+    }
+
+    .section-left p {
+        width: 100%;
+    }
+
+    .section-right {
+        position: initial;
+        margin-top: 30px;
+        margin-bottom: -80px;
+        width: 100%;
+    }
+}

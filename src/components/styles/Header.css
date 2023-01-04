@@ -1,0 +1,63 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 80%;
+    margin: 0 auto;  
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    padding: 0 15px;
+}
+
+.nav-menu li a:hover {
+    color: #495e57;
+}
+
+.hamburger, .close-hamburger {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: 90vh;
+        background: #edefee;
+        position: absolute;
+        top: 10vh;
+        right: -100%;
+        z-index: 10;
+        transition: 0.5s;
+        padding: 20px 30px 20px 120px;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        top: 10vh;
+    }
+
+    .nav-menu li {
+        padding: 10px 0;
+    }
+
+
+    .hamburger, .close-hamburger {
+        display: initial;
+        z-index: 11;
+    }
+}
