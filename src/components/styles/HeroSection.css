@@ -98,12 +98,12 @@
         height: 370px;
     }
 
-    h1 {
-        font-size: 50pt;
+    .section-left h1 {
+        font-size: 50px;
       }
       
       h2 {
-        font-size: 34pt;
+        font-size: 34px;
       }
 }
 
@@ -139,6 +139,7 @@
 
     .section-left p {
         width: 100%;
+        font-size: smaller
     }
 
     .section-right {
@@ -146,5 +147,9 @@
         margin-top: 30px;
         margin-bottom: -100px;
         width: 100%;
+    }
+
+    .btn {
+        font-size: smaller;
     }
 }

@@ -66,6 +66,7 @@ header {
 
     .nav-menu li a {
         color: #333333;
+        font-size: smaller;
     }
 
     .hamburger, .close-hamburger {
