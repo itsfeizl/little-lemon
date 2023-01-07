@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import HeaderElement from '../components/HeaderElement';
 import HeroSection from '../components/HeroSection';
 import Specials from '../components/Specials';
 import Footer from '../components/Footer';
@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <>
-      <Header />
+      <HeaderElement />
       <HeroSection />
       <Specials />
       <Footer />

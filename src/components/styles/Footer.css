@@ -30,7 +30,7 @@
 }
 
 .footer-content ul li {
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .footer-content h5 {

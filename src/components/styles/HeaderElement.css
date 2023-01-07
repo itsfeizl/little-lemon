@@ -1,0 +1,55 @@
+.header {
+    background-color: white;
+    height:10vh;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height:10vh;
+    margin: 0 auto;
+}
+
+.logo-img {
+    width: 200px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .header-wrapper {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .hamburger {
+        z-index: 3;
+    }
+
+    .header-wrapper .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        padding: 60px 30px 30px;
+        background: rgba(255,255,255,1);
+        z-index: 1;
+    }
+    
+    .header-wrapper .mobile-nav ul li {
+        padding: 7px 0;
+    }
+}

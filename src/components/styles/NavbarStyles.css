@@ -1,0 +1,42 @@
+.header {
+    background-color: white;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:8vh;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .header-wrapper {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-wrapper .mobile-nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        padding: 10px 30px 30px;
+        background: azure
+    }
+    
+    .header-wrapper .mobile-nav ul li {
+        padding: 10px 0;
+    }
+}

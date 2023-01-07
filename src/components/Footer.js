@@ -22,17 +22,17 @@ const Footer = () => {
                     <div className="opening-times">
                         <h5>OPENING TIMES</h5>
                         <ul>
-                            <li>MON - WED: 10:30AM - 12:00AM</li>
-                            <li>FRI: 12:00PM - 1:00AM</li>
-                            <li>SAT - SUN: 10:30AM - 12:00AM</li>
+                            <li>Mon - Wed: 10:30AM - 12:00AM</li>
+                            <li>Fri: 12:00PM - 1:00AM</li>
+                            <li>Sat - Sun: 10:30AM - 12:00AM</li>
                         </ul>
                     </div>
                     <div className="contact">
                         <h5>CONTACT US</h5>
                         <ul>
-                            <li>96 ISABELLA STREET, LONDON SE1 8DD</li>
-                            <li>TEL: 020 7928 0678</li>
-                            <li>EMAIL: JACKS@WINDMILLTAVERNS.COM</li>
+                            <li>96 Abafom Road, North Ridge - Accra</li>
+                            <li>Tel: 020 7928 0678</li>
+                            <li>Email: info@littlelemon.com</li>
                         </ul>
                     </div>
             </div>
