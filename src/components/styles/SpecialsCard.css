@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 659px) {
     .special-card {
         display: flex;
         flex-direction: column;

@@ -1,5 +1,5 @@
 .specials-section-container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -18,20 +18,14 @@
 @media screen and (max-width: 1024px) {
     .specials-section-container {
         width: 100%;
+        padding-top: 150px;
         padding-left: 30px;
         padding-right: 30px;
     }
 
-    .specials-section-title {
-        flex-direction: column;
-        align-items:flex-start;
-    }
-}
-
-@media screen and (max-width: 1040px) {
     .specials-section-title h1 {
         line-height: 0.8;
-        margin: 30px 0;
+        margin: 20px 0 20px;
         font-size: 50px;
     }
 
@@ -39,4 +33,23 @@
         margin-bottom: 30px;
         font-size: smaller;
     }
+
+    
+}
+
+@media screen and (max-width: 852px) {
+    .specials-section-container {
+        padding-top: 100px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 659px) {
+    .specials-section-title {
+        flex-direction: column;
+        align-items:flex-start;
+    }
+
 }

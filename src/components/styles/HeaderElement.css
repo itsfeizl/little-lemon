@@ -1,18 +1,32 @@
 .header {
-    background-color: white;
-    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 10px solid #495e57;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 3;
 }
+
 .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 85%;
-    height:10vh;
+    
     margin: 0 auto;
+    
+}
+
+
+.image-wrapper {
+    width: 200px;
 }
 
 .logo-img {
-    width: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 .title {
@@ -23,11 +37,15 @@
 
 
 @media screen and (max-width: 1024px) {
+
+    .header {
+        position: fixed;
+        height: 10vh;
+    }
+    
     .header-wrapper {
         width: 100%;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #fff;
+        padding: 0px 30px;
         position: fixed;
         z-index: 2;
     }
@@ -47,6 +65,7 @@
         padding: 60px 30px 30px;
         background: rgba(255,255,255,1);
         z-index: 1;
+        border-bottom: 10px solid #495e57;
     }
     
     .header-wrapper .mobile-nav ul li {

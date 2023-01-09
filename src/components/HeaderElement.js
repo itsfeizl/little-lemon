@@ -10,7 +10,9 @@ const Navbar = () => {
   return (
     <div className="header">
       <div className="header-wrapper">
-        <NavLink to="/">{<img className="logo-img" src = { Logo } alt = "Little Lemon logo" />}</NavLink>
+        <div className="image-wrapper">
+          <NavLink to="/">{<img className="logo-img" src = { Logo } alt = "Little Lemon logo" />}</NavLink>
+        </div>
         <Navigation />
         <MobileNav />
       </div>

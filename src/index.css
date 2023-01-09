@@ -12,6 +12,25 @@ body {
   color: #333333;
 }
 
+input {
+  font-family: "karla", sans-serif;
+  font-size: 15px;
+  color: #333;
+}
+
+::placeholder {
+  color: #333333;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #333333;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #333333;
+}
+
 h1, h2 {
   font-family: 'Markazi Text', serif;
 }
