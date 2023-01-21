@@ -28,21 +28,19 @@
     margin-bottom: 20px;
 }
 
-
-
 .form {
     width: 40%;
-    height: 600px;
+    height: auto;
     background-color: #fff;
     color: #333333;
     border-radius: 10px;
-    padding: 30px 40px;
-    text-align: center;
+    padding: 30px 40px 50px;
+    text-align: left;
 }
 
 .form h1 {
     font-size: 24pt;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .form p {
@@ -50,69 +48,82 @@
     margin-bottom: 30px;
 }
 
+
 fieldset {
     border: none;
 }
 
-input {
-    width: 100%;
-    padding: 10px 20px;
-    margin-bottom: 15px;
-    border: 1px solid rgba(51,51,51,0.3);
-    border-radius: 5px;
-}
-
-.guests {
-    font-size:15px;
-    color: #333333;
+.field {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-size: 18px;
+    margin: 0 0 5px 0px;
+    font-weight: 500;
+}
+
+input {
+    padding: 10px;
     border: 1px solid rgba(51,51,51,0.3);
-    padding: 10px 20px;
     border-radius: 5px;
-    margin-bottom: 15px;
-    
+    width: 100%;
 }
 
-.guests input {
-    border: none;
-    width: 20%;
-    padding: 0;
-    margin: 0;
+input[type=datetime-local] {
+    color: #949494
 }
 
-.guests input:focus, select:focus {
-    outline: none !important;
+.guestsdate {
+    display: grid;
+    grid-template-columns: 68% 28%;
+    gap: 4%;
+}
+
+.occasion {
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    padding-right: 10px;
+    border: 1px solid rgba(51,51,51,0.3);
+    border-radius: 5px;
 }
 
 select {
-    width: 100%;
+    padding: 10px;
+    outline: none;
     border: none;
-    font-size:15px;
-    color: #333333;
-}
-
-select option {
     width: 100%;
+    font-size: 15px;
+    color: #949494;
 }
 
 .reserve-btn {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
-    background-color: #f4ce14;
+    background-color: #333;
     border: none;
     border-radius: 5px;
     font-size: 15px;
     font-weight: bold;
-    color:#333;
+    color:#fff;
 }
 
 .reserve-btn:hover {
-    color: #f4ce14;
-    background-color: #333;
+    background-color: #495e57;
     transition: 0.3s;
+}
+
+.error-message {
+    font-size: 15px;
+    color: red;
+    margin-top: 5px;
 }
 
 
@@ -137,5 +148,10 @@ select option {
     .form {
         width: 100%;
         margin-top: -50px
+    }
+
+    .guestsdate {
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import HeaderElement from '../components/HeaderElement';
 import Footer from '../components/Footer';
-import ReservationsContent from '../components/ReservationsContent';
+import ReservationsPage from '../components/ReservationsPage';
 
 const Reservations = () => {
   return (
     <div>
       <HeaderElement />
-      <ReservationsContent />
+      <ReservationsPage />
       <Footer />
     </div>
   )
